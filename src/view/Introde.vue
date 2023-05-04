@@ -1,17 +1,17 @@
 <template>
   <div class="wrapper">
-    this is a test!
+      this is Introde!
     <div @click="urlJump()">jump</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Introde',
   methods: {
     urlJump () {
       // 页面跳转
-      this.$router.push({ path: '/introde' })
+      this.$router.push({ path: '/' })
     }
   }
 }
@@ -21,6 +21,6 @@ export default {
 .wrapper {
   width: 100%;
   height: 100%;
-  background: red;
+  background: green;
 }
 </style>
