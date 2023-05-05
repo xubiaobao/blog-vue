@@ -25,6 +25,7 @@ export default {
 <style>
 body {
   margin: 0;
+  cursor: url('../static/1.ico'),auto !important;
 }
 
 #app {
@@ -38,6 +39,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .slide-right-enter-active,
 .slide-right-leave-active,
 .slide-left-enter-active,
