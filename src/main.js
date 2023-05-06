@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueParticles from 'vue-particles'
 
 Vue.config.productionTip = false
 
@@ -54,3 +55,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+// 动态粒子特效
+Vue.use(VueParticles)

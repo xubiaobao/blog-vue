@@ -11,12 +11,14 @@ export default {
   name: 'App',
   watch: {
     '$route' (to, from) {
-      this.transitionName = to.name === 'Home' ? 'slide-right' : 'slide-left'
+      if (from.name !== null && from.name !== undefined) {
+        this.transitionName = to.name === 'Home' ? 'slide-right' : 'slide-left'
+      }
     }
   },
   data () {
     return {
-      transitionName: 'slide-left'
+      transitionName: ''
     }
   }
 }

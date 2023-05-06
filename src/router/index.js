@@ -22,6 +22,11 @@ export default new Router({
       path: '/introde',
       name: 'Introde',
       component: () => import('../view/Introde')
+    },
+    {
+      path: '/draw',
+      name: 'Draw',
+      component: () => import('../view/Draw')
     }
   ]
 })

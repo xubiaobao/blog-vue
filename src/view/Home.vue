@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     this is a test!
-    <div @click="urlJump()">jump</div>
+    <div @click="urlJump()" style="position: relative;z-index: 101;">jump</div>
     <mouseMove></mouseMove>
   </div>
 </template>
@@ -25,5 +25,6 @@ export default {
 .wrapper {
   width: 100%;
   height: 100%;
+  background: rebeccapurple;
 }
 </style>
