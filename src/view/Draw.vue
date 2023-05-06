@@ -15,7 +15,7 @@
         :hoverEffect="true"
         hoverMode="grab"
         :clickEffect="true"
-        clickMode="push"
+        clickMode="repulse"
         class="lizi"
       >
       </vue-particles>
