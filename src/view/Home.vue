@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <Weather></Weather>
     <div class="signboard">
       <span>this is a test!</span>
       <span>this is a test2!</span>
@@ -8,8 +9,11 @@
 </template>
 
 <script>
+import Weather from '../components/weather.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: { Weather }
 }
 </script>
 

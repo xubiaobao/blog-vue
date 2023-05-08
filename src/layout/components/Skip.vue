@@ -1,5 +1,7 @@
 <template>
-  <div ref='skip' id='skip' class='skip rise' @click="nextJump()"></div>
+  <div ref='skip' id='skip' class='skip rise' @click="nextJump()">
+    <i class="el-icon-bottom"></i>
+  </div>
 </template>
 
 <script>
@@ -43,8 +45,15 @@ export default{
   width: 50px;
   height: 50px;
   z-index: 9999;
+  display: flex;
   background: red;
   position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.skip i {
+  font-size: 30px;
 }
 
 /* 下坠动画 */

@@ -2,10 +2,13 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
 import store from './store'
-import '../src/assets/font/font.css'
+import router from './router'
+import ElementUI from 'element-ui'
 import VueParticles from 'vue-particles'
+
+import '../src/assets/font/font.css'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
 
@@ -50,6 +53,11 @@ router.beforeEach(function (to, from, next) {
   next()
 })
 
+Vue.use(ElementUI)
+
+// 动态粒子特效
+Vue.use(VueParticles)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -58,5 +66,3 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
-// 动态粒子特效
-Vue.use(VueParticles)
