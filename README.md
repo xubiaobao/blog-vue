@@ -28,4 +28,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 项目基于[element-ui](https://element.eleme.cn/)
 [和风天气插件]（https://widget.qweather.com/）
+api:https://devapi.qweather.com/v7/weather/now?location=101010100&key=06ea91a7abc14780b8b70fd701d1bf5d
 vue-particles 动态粒子效果

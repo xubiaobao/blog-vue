@@ -19,7 +19,7 @@ export default new Router({
       },
       children: [
         {
-          path: 'home',
+          path: '',
           name: 'Home',
           component: () => import('../view/Home'),
           meta: { index: 1, next: '/introde' }

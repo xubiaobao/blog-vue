@@ -40,19 +40,20 @@ export default{
 
 <style>
 .skip {
-  right: 0;
+  right: 2%;
   bottom: 20%;
   width: 50px;
   height: 50px;
   z-index: 9999;
   display: flex;
-  background: red;
+  background: black;
   position: absolute;
   align-items: center;
   justify-content: center;
 }
 
 .skip i {
+  color: white;
   font-size: 30px;
 }
 

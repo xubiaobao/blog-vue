@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
-    <Weather></Weather>
     <div class="signboard">
-      <span>this is a test!</span>
-      <span>this is a test2!</span>
+      <span>BAO YAN BAO YU</span>
+      <span>welcome to my blog</span>
     </div>
+    <Weather style='position:absolute;z-index:500;'></Weather>
   </div>
 </template>
 
@@ -21,7 +21,8 @@ export default {
 .wrapper {
   width: 100%;
   height: 100%;
-  background: rebeccapurple;
+  background-size: cover;
+  background-image: url('../../static/back.jpg');
 }
 
 .signboard {
@@ -32,10 +33,15 @@ export default {
   align-items: center;
   flex-direction:column;
   justify-content: center;
+  color: rgb(31, 31, 31);
 }
 
 .signboard span:first-child {
-  font-size: 35px;
+  font-size: calc(60vw * 100 / 1920);
   font-family: youshebiaotihei;
+}
+
+.signboard span:nth-child(2){
+  font-size: calc(20vw * 100 / 1920);
 }
 </style>
