@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import '../src/assets/font/font.css'
 import VueParticles from 'vue-particles'
 
@@ -52,6 +53,7 @@ router.beforeEach(function (to, from, next) {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'

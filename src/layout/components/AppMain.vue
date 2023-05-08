@@ -1,21 +1,16 @@
 <template>
   <transition :name='transitionName'>
-    <router-view :key="key"/>
+    <router-view />
   </transition>
 </template>
 
 <script>
 export default {
   name: 'AppMain',
-  computed: {
-    key () {
-      return this.$route.path
-    }
-  },
   watch: {
     '$route' (to, from) {
       if (from.name !== null && from.name !== undefined) {
-        this.transitionName = to.name === 'Home' ? 'slide-right' : 'slide-left'
+        this.transitionName = to.meta.index > from.meta.index ? 'slide-left' : 'slide-right'
       }
     }
   },
