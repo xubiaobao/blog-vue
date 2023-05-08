@@ -1,26 +1,12 @@
 <template>
   <div id="app">
-    <transition :name='transitionName'>
-      <router-view></router-view>
-    </transition>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  watch: {
-    '$route' (to, from) {
-      if (from.name !== null && from.name !== undefined) {
-        this.transitionName = to.name === 'Home' ? 'slide-right' : 'slide-left'
-      }
-    }
-  },
-  data () {
-    return {
-      transitionName: ''
-    }
-  }
+  name: 'App'
 }
 </script>
 
@@ -40,31 +26,5 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.slide-right-enter-active,
-.slide-right-leave-active,
-.slide-left-enter-active,
-.slide-left-leave-active {
-  width: 100%;
-  position: absolute;
-  will-change: transform;
-  transition: all 500ms ease-out;
-}
-
-.slide-right-enter {
-  transform: translate3d(0, -100%, 0);
-}
-
-.slide-right-leave-active {
-  transform: translate3d(0, 0, 0);
-}
-
-.slide-left-enter {
-  transform: translate3d(0, 100%, 0);
-}
-
-.slide-left-leave-active {
-  transform: translate3d(0, 0, 0);
 }
 </style>

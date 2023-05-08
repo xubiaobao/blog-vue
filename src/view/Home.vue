@@ -1,14 +1,14 @@
 <template>
   <div class="wrapper">
-    this is a test!
+    <div class="signboard">
+      <span>this is a test!</span>
+      <span>this is a test2!</span>
+    </div>
     <div @click="urlJump()" style="position: relative;z-index: 101;">jump</div>
-    <mouseMove></mouseMove>
   </div>
 </template>
 
 <script>
-import mouseMove from '../components/mouseMove.vue'
-
 export default {
   name: 'Home',
   methods: {
@@ -16,8 +16,7 @@ export default {
       // 页面跳转
       this.$router.push({ path: '/introde' })
     }
-  },
-  components: { mouseMove }
+  }
 }
 </script>
 
@@ -26,5 +25,20 @@ export default {
   width: 100%;
   height: 100%;
   background: rebeccapurple;
+}
+
+.signboard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position:absolute;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.signboard span:first-child {
+  font-size: 35px;
+  font-family: youshebiaotihei;
 }
 </style>

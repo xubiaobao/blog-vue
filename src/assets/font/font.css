@@ -1,0 +1,7 @@
+/*字体包引入*/
+@font-face {
+  font-family: "youshebiaotihei";
+  src: url('YouSheBiaoTiHei.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

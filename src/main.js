@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import '../src/assets/font/font.css'
 import VueParticles from 'vue-particles'
 
 Vue.config.productionTip = false

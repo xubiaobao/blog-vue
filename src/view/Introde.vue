@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
       this is Introde!
-    <div @click="urlJump()">jump</div>
+    <div @click="urlJump()" style="position: relative;z-index: 101;">jump</div>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   methods: {
     urlJump () {
       // 页面跳转
-      this.$router.push({ path: '/' })
+      this.$router.push({ path: '/home' })
     }
   }
 }
