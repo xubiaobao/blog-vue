@@ -4,16 +4,12 @@
       <span>BAO YAN BAO YU</span>
       <span>welcome to my blog</span>
     </div>
-    <Weather style='position:absolute;z-index:500;'></Weather>
   </div>
 </template>
 
 <script>
-import Weather from '../components/weather.vue'
-
 export default {
-  name: 'Home',
-  components: { Weather }
+  name: 'Home'
 }
 </script>
 

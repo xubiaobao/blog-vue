@@ -3,17 +3,19 @@
     <app-main />
     <skip></skip>
     <mouse-move></mouse-move>
+    <date style='position:absolute;z-index:500;top: 0;right: 0;'></date>
   </div>
 </template>
 
 <script>
-import AppMain from './components/AppMain.vue'
+import Date from '../components/date'
 import Skip from './components/Skip.vue'
+import AppMain from './components/AppMain.vue'
 import mouseMove from '../components/mouseMove.vue'
 
 export default{
   name: 'Layout',
-  components: { AppMain, mouseMove, Skip }
+  components: { AppMain, mouseMove, Skip, Date }
 }
 </script>
 
