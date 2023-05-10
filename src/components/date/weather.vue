@@ -24,9 +24,9 @@ export default {
   },
   methods: {
     getWeather () { // 第三方天气api接口
-      axios.get('http://localhost:8000/admin/weather').then(res => {
-        if (res.status === 200) {
-          this.weatcherData = res.data
+      axios.get('http://127.0.0.1/admin/weather').then(res => {
+        if (res.data.code === 1) {
+          this.weatcherData = res.data.data
         }
       }).catch(err => {
         console.log(err)
