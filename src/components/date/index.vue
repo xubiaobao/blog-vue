@@ -1,7 +1,7 @@
 <template>
   <div class="date-weather">
-    <weather></weather>
     <date></date>
+    <weather></weather>
   </div>
 </template>
 
@@ -23,9 +23,7 @@ export default {
 <style>
 .date-weather {
   font-size: 13px;
-  width: 186px;
-  height: 86px;
-  display: block;
+  display: flex;
   align-items: center;
   text-align: center;
 }

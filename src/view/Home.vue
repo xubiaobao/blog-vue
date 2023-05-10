@@ -33,11 +33,13 @@ export default {
 }
 
 .signboard span:first-child {
-  font-size: calc(60vw * 100 / 1920);
   font-family: youshebiaotihei;
+  font-size: calc(60vw * 100 / 1920);
 }
 
 .signboard span:nth-child(2){
-  font-size: calc(20vw * 100 / 1920);
+  font-weight: bold;
+  font-family: fangsong;
+  font-size: calc(22vw * 100 / 1920);
 }
 </style>

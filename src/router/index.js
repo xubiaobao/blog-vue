@@ -22,19 +22,19 @@ export default new Router({
           path: '',
           name: 'Home',
           component: () => import('../view/Home'),
-          meta: { index: 1, next: '/introde' }
+          meta: { index: 1, next: '/introde', last: '' }
         },
         {
           path: '/introde',
           name: 'Introde',
           component: () => import('../view/Introde'),
-          meta: { index: 2, next: '/draw' }
+          meta: { index: 2, next: '/draw', last: '/' }
         },
         {
           path: '/draw',
           name: 'Draw',
           component: () => import('../view/Draw'),
-          meta: { index: 3, next: '' }
+          meta: { index: 3, next: '', last: '/introde' }
         }
       ]
     }
