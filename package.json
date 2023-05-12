@@ -20,9 +20,12 @@
     "less": "^3.0.0",
     "less-loader": "^5.0.0",
     "marked": "^5.0.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
     "vue": "^2.5.2",
     "vue-particles": "^1.0.9",
     "vue-router": "^3.0.1",
+    "vue-seamless-scroll": "^1.1.23",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
