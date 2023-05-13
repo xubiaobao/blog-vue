@@ -52,19 +52,18 @@ export default {
     padding: 0;
     margin: 0 auto;
     li{
-        display: inline-block;
         float: left;
-        line-height: 30px;
+        width: 100%;
         font-size: 13px;
         overflow: hidden;
         margin-top: 12px;
+        line-height: 30px;
         background: #f1f3fd;
         text-overflow: ellipsis;
         .title {
           float: left;
           margin-left: 10px;
           white-space: nowrap;
-          display: inline-block;
         }
       }
     }
