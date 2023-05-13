@@ -4,7 +4,7 @@ import request from './request.js'
 export function getMsg ($data) {
   return request({
 
-    url: '/admin/getMsgList',
+    url: '/blog/getMsgList',
 
     method: 'get',
 
@@ -17,7 +17,7 @@ export function getMsg ($data) {
 export function addMsg ($data) {
   return request({
 
-    url: '/admin/addMsg',
+    url: '/blog/addMsg',
 
     method: 'post',
 
