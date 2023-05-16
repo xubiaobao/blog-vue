@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-      <div class="inner-left" style="display: none;">
+      <div class="inner-left">
         <img src="../../static/mine.jpg">
         <span class="title">寻人启事</span>
         <div class="content markdown-body"  v-html="content"></div>
@@ -70,9 +70,9 @@ export default {
 
 .inner-right {
   width: 20%;
-  height: 80%;
+  height: 60%;
   z-index: 1;
-  position: relative;
+  top:0%;
   background: white;
 }
 
@@ -116,7 +116,7 @@ export default {
 .word-roll {
   top: 0;
   width: 100%;
-  height: 35%;
+  height: 45%;
   overflow: hidden;
   position: relative;
 }
@@ -133,6 +133,5 @@ export default {
 .board {
   width: 100%;
   height: 35%;
-  background: blue;
 }
 </style>

@@ -17,23 +17,23 @@ export default {
   data () {
     return {
       listData: [{
-        'content': '无缝滚动第一行无缝滚动第一行无缝滚动第一行无缝滚动第一行'
+        'content': '是真的，我看过！'
       }, {
-        'content': '无缝滚动第二行无缝滚动第二行'
+        'content': '他好帅的，世界上怎么会有这么帅的人'
       }, {
-        'content': '无缝滚动第三行无缝滚动第三行'
+        'content': '如果我是女的我都想嫁给他'
       }, {
-        'content': '无缝滚动第四行无缝滚动第四行'
+        'content': '这么帅，居然敢在大街上走，不怕堵车吗'
       }, {
-        'content': '无缝滚动第五行无缝滚动第五行'
+        'content': '貌比潘安说的就是他吧！'
       }, {
-        'content': '无缝滚动第六行无缝滚动第六行'
+        'content': '同求，赏金十万寻求帅哥行踪'
       }, {
-        'content': '无缝滚动第七行无缝滚动第七行'
+        'content': '&￥&（）……&%……￥#*）*'
       }, {
-        'content': '无缝滚动第八行无缝滚动第八行'
+        'content': '啊~~太帅了'
       }, {
-        'content': '无缝滚动第九行无缝滚动第九行'
+        'content': '如果我也能这么帅就好了'
       }],
       classOption: { step: 1, limitMoveNum: 3 }
     }
