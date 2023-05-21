@@ -34,7 +34,19 @@ export default new Router({
           path: '/draw',
           name: 'Draw',
           component: () => import('../view/Draw'),
-          meta: { index: 3, next: '', last: '/introde' }
+          meta: { index: 3, next: '/article', last: '/introde' }
+        },
+        {
+          path: '/article',
+          name: 'Article',
+          component: () => import('../view/Article'),
+          meta: { index: 3, next: '/board', last: '/draw' }
+        },
+        {
+          path: '/board',
+          name: 'Board',
+          component: () => import('../view/Board'),
+          meta: { index: 3, next: '', last: '/article' }
         }
       ]
     }

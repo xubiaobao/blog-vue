@@ -19,11 +19,13 @@
         class="lizi"
       >
       </vue-particles>
+    <phone style="position:absolute;width:100%;height:100%;z-index:999;top:0;" />
     </div>
 </template>
 
 <script>
 import mouseMove from '../components/mouseMove.vue'
+import phone from '../components/draw/phone.vue'
 
 export default {
   name: 'Draw',
@@ -33,7 +35,7 @@ export default {
       this.$router.push({ path: '/home' })
     }
   },
-  components: { mouseMove }
+  components: { mouseMove, phone }
 }
 </script>
 

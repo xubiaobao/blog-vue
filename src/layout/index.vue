@@ -3,7 +3,7 @@
     <app-main />
     <skip></skip>
     <mouse-move></mouse-move>
-    <date style='position:absolute;z-index:500;top: 0;right: 1%;'></date>
+    <date style='position:absolute;z-index:9999;top: 0;right: 1%;'></date>
   </div>
 </template>
 
