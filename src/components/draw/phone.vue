@@ -14,7 +14,8 @@ export default {
       imageList: [
         '../../../static/draw/fat.jpg',
         '../../../static/draw/dog.png',
-        '../../../static/draw/see.png'
+        '../../../static/draw/see.png',
+        '../../../static/draw/laugh.jpg'
       ]
     }
   }
@@ -70,9 +71,9 @@ img {
 }
 
 .img3 {
-  top: 0px;
+  top: 250px;
   left: 600px;
-  transform: rotate(-20deg);
+  transform: rotate(30deg);
 }
 
 .img4 {
