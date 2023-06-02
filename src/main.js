@@ -50,7 +50,16 @@ router.beforeEach(function (to, from, next) {
     }
   }
 
-  next()
+  // 值不存在，判断为第一次加载，跳转loading
+  if (store.state.lastVisitPath === '') {
+    // 存储需要跳转到的页面地址，跳转loading
+    store.commit('changePath', to.path)
+    next({
+      path: '/'
+    })
+  } else {
+    next()
+  }
 })
 
 Vue.use(ElementUI)

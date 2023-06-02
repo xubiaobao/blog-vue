@@ -9,14 +9,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Layout,
+      component: () => import('../view/Loading'),
       meta: {
         title: 'this is a test',
         content: {
           keywords: 'this,is,a,test',
           description: 'this is a test'
         }
-      },
+      }
+    },
+    {
+      path: '/',
+      component: Layout,
       children: [
         {
           path: '',
