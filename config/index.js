@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // 配置代理
+      '/map': { //代理标识
+        target: 'https://apis.map.qq.com/',//指向的实际地址
+        changeOrigin: true, // 允许跨域
+        pathRewrite: {
+          '^/map': "/ws/location/v1/ip"
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

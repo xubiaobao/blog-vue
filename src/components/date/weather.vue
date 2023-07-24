@@ -23,10 +23,19 @@ export default {
     }, 1000 * 60 * 60)
   },
   methods: {
-    getWeather () { // 第三方天气api接口
-      axios.get('https://wechat.baoyanbaoyu.top/blog/weather').then(res => {
-        if (res.data.code === 1) {
-          this.weatcherData = res.data.data
+    getWeather () {
+      // 获取城市信息
+      const getCityUrl = '/map?key=UIJBZ-LKUK7-JHYXB-PHF7H-FUJLK-3HFIO&sig=80273ea56500c3ab425239c654a6cd1e'
+      axios.get(getCityUrl).then(result => {
+        if (result.data) {
+          // 获取天气api接口
+          axios.get('https://wechat.baoyanbaoyu.top/blog/weather?locationInfo=' + JSON.stringify(result.data.result)).then(res => {
+            if (res.data.code === 200) {
+              this.weatcherData = res.data.data
+            }
+          }).catch(err2 => {
+            console.log(err2)
+          })
         }
       }).catch(err => {
         console.log(err)
